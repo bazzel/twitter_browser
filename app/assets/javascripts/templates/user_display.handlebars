@@ -1,47 +1,41 @@
 <div id="user_browser" class="" style=""><div id="page-container">
-    <div class="main-content">
-      <div class="upper-nav">
-        <div id="sc798" class="">
-          <span>← Search</span>
-        </div>
-      </div>
-      <div id="sc800" class=""><div class="profile-header">
-    <div class="main-info">
-      <div class="profile-image-container">
-        <img src="http://a0.twimg.com/profile_images/1371183258/gravatar_reasonably_small.jpeg" data-handlebars-id="803">
-      </div>
-      <div class="profile-details">
-        <div class="full-name">
-          <h2><span id="sc806" class="" style="">Gregory Moeck</span></h2>
-        </div>
-        <div class="screen-name-and-location">
-          <span class="handle">@<span id="sc810" class="" style="">gregmoeck</span></span>
-          <span id="sc812" class="" style="">San Francisco, CA</span>
-        </div>
-        <div class="bio">
-          <span id="sc814" class="" style=""></span>
-        </div>
-      </div>
+  <div class="main-content">
+    <div class="upper-nav">
+      <span>← Search</span>
     </div>
-    <div class="other-info">
-      <ul class="user-stats">
-        <li>
-          <span id="sc817" class="" style="">507</span>
-          <span class="user-stats-stat">Tweets</span>
-        </li>
+    {{#view App.UserProfileView}}
+      <div class="profile-header">
+        <div class="main-info">
+          <div class="profile-image-container">
+            <img src="http://a0.twimg.com/profile_images/1371183258/gravatar_reasonably_small.jpeg">
+          </div>
+          <div class="profile-details">
+            <div class="full-name">
+              <h2>Gregory Moeck</h2>
+            </div>
+            <div class="screen-name-and-location">
+              <span class="handle">@gregmoeck</span> San Francisco, CA
+            </div>
+            <div class="bio">
+          </div>
+        </div>
+      </div>
+      <div class="other-info">
+        <ul class="user-stats">
           <li>
-            <span id="sc819" class="" style="">271</span>
-            <span class="user-stats-stat">Following</span>
+            507 <span class="user-stats-stat">Tweets</span>
           </li>
-        <li>
-          <span id="sc821" class="" style="">198</span>
-          <span class="user-stats-stat">Followers</span>
-        </li>
-      </ul>
-    </div>
+            <li>
+              271 <span class="user-stats-stat">Following</span>
+            </li>
+          <li>
+            198 <span class="user-stats-stat">Followers</span>
+          </li>
+        </ul>
+      </div>
+    {{/view}}
   </div>
-  </div>
-      <div id="sc824" class=""><div class="stream">
+  <div id="sc824" class=""><div class="stream">
     <ul id="sc827" class=""><li id="sc916" class="" style=""><div class="stream-item">
     <div class="stream-item-content">
       <div class="tweet-image"><img height="48" width="48" src="http://a0.twimg.com/profile_images/1371183258/gravatar_normal.jpeg" data-handlebars-id="918"></div>
@@ -407,4 +401,5 @@
   </div>
     </div>
   </div>
-  </div>
+</div>
+
