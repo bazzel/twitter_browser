@@ -1,4 +1,5 @@
 App.UserProfileView = Em.View.extend
+  templateName: 'user_profile'
   profileImageUrl: 'http://a0.twimg.com/profile_images/1371183258/gravatar_reasonably_small.jpeg'
   fullName: 'Gregory Moeck'
   userName: 'gregmoeck'
