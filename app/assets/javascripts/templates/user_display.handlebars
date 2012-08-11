@@ -11,25 +11,24 @@
           </div>
           <div class="profile-details">
             <div class="full-name">
-              <h2>Gregory Moeck</h2>
+              <h2>{{view.fullName}}</h2>
             </div>
             <div class="screen-name-and-location">
-              <span class="handle">@gregmoeck</span> San Francisco, CA
+              <span class="handle">@{{view.userName}}</span> {{view.location}}
             </div>
-            <div class="bio">
-          </div>
+            <div class="bio">{{view.bio}}</div>
         </div>
       </div>
       <div class="other-info">
         <ul class="user-stats">
           <li>
-            507 <span class="user-stats-stat">Tweets</span>
+            {{view.tweetCount}} <span class="user-stats-stat">Tweets</span>
           </li>
             <li>
-              271 <span class="user-stats-stat">Following</span>
+              {{view.followingCount}} <span class="user-stats-stat">Following</span>
             </li>
           <li>
-            198 <span class="user-stats-stat">Followers</span>
+            {{view.followersCount}} <span class="user-stats-stat">Followers</span>
           </li>
         </ul>
       </div>
