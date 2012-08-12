@@ -28,19 +28,11 @@ class TwitterUser
   end
 
   def to_json(*a)
-    { user:
-      {
-        guid:               @guid,
-        user_name:          @user_name,
-        full_name:          @full_name,
-        location:           @location,
-        bio:                @bio,
-        profile_image_url:  @profile_image_url,
-        tweet_count:        @tweet_count,
-        followers_count:    @followers_count,
-        following_count:    @following_count,
-        tweets:             @tweets
-      }
-    }.to_json
+    arr = instance_variables.inject([]) do |array, v|
+      key = v.to_s.gsub(/@/, '')
+      array << key << send(key.to_sym)
+    end
+
+    { user: Hash[*arr] }.to_json
   end
 end
