@@ -8,4 +8,6 @@ App.User = DS.Model.extend
   tweetCount: DS.attr('number')
   followingCount: DS.attr('number')
   followersCount: DS.attr('number')
-
+  tweets: DS.hasMany('App.Tweet'
+    embedded: true
+  )
