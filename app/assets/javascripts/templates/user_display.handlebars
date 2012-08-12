@@ -1,28 +1,10 @@
-<div id="user_browser" class="" style=""><div id="page-container">
+<div id="page-container">
   <div class="main-content">
-    <div class="upper-nav"><span>← Search</span></div>
-    {{view App.UserProfileView}}
-  </div>
+    <div class="upper-nav">
+      <span>← Search</span>
+    </div>
 
-  <div class="stream">
-    <ul>
-    {{#each tweet in tweets}}
-      <li>
-        <div class="stream-item">
-          <div class="stream-item-content">
-            <div class="tweet-image"><img {{bindAttr src="profileImageUrl"}}></div>
-            <div class="tweet-content">
-              <div class="tweet-row">
-                <span class="tweet-user-name"><span class="tweet-screen-name">{{userName}}</span></span>
-                <span class="tweet-full-name">{{fullName}}</span>
-              </div>
-              <div class="tweet-row">
-                <div class="tweet-text">{{tweet.text}}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-    {{/each}}
-    </ul>
+    {{view App.UserProfileView}}
+    {{view App.UserStreamView}}
   </div>
+</div>
