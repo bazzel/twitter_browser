@@ -2,6 +2,9 @@ App.Router = Em.Router.extend
   enableLogging: true
   location: 'hash'
   root: Em.Route.extend
+    # EVENTS
+    backToSearch: Em.Route.transitionTo 'index'
+    # STATES
     index: Em.Route.extend
       route: '/'
       redirectsTo: 'search.index'
