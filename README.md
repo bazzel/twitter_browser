@@ -5,7 +5,7 @@ Since then we have [ember.js](http://emberjs.com) which, as you may know, initia
 Many concepts in this training are still applicable to ember.js and I think this still makes a good resource if you want to get started with ember.js.
 To get familiar with ember.js, I decided to build the Twitter Browser using ember.js.
 
-The application uses a [Rails 3.2.x](http://rubyonrails.org/) back-end, mainly for its asset pipeline which makes organizing your JS files extremely easy. Also, it uses the [Twitter](https://github.com/sferik/twitter) gem to retrieve user- and tweetdata from Twitter.
+The application uses Ruby 1.9.x and a [Rails 3.2.x](http://rubyonrails.org/) back-end, mainly for its asset pipeline which makes organizing your JS files extremely easy. Also, it uses the [Twitter](https://github.com/sferik/twitter) gem to retrieve user- and tweetdata from Twitter.
 
 I'm using [Ember Data](https://github.com/emberjs/data) to retrieve data from the server.
 
