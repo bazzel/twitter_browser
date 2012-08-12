@@ -14,5 +14,6 @@ App.Router = Em.Router.extend
       displayUserProfile: Em.Route.extend
         route: '/:name'
         connectOutlets: (router, context) ->
-          user = new App.User()
+          name = context.name
+          user = App.User.find(name)
           router.get('applicationController').connectOutlet('user', user)

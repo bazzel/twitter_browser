@@ -1,4 +1,6 @@
 TwitterBrowser::Application.routes.draw do
+  resources :users
+
   root :to => 'assets#index'
 
   get "assets/index"
