@@ -1,6 +1,6 @@
 App.EnterUserNameView = Em.TextField.extend
+  placeholder: 'Enter Twitter User Name'
   insertNewline: ->
-    App.router.transitionTo('displayUserProfile',
-      name: @get('value')
-    )
+    @get('controller.target').send 'showUser',
+      username: @get('value')
 

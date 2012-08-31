@@ -14,9 +14,11 @@ App.Router = Em.Router.extend
         route: '/'
         connectOutlets: (router) ->
           router.get('applicationController').connectOutlet('search')
+      showUser: (router, event) ->
+        router.transitionTo 'displayUserProfile', event
       displayUserProfile: Em.Route.extend
-        route: '/:name'
+        route: '/:username'
         connectOutlets: (router, context) ->
-          name = context.name
-          user = App.User.find(name)
+          username = context.username
+          user = App.User.find(username)
           router.get('applicationController').connectOutlet('user', user)
